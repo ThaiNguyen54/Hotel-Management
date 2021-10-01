@@ -9,7 +9,7 @@ Participants:
 - Member: [Nguyễn Thanh Trúc - update later]
 
 
-Task management table: [here] https://trello.com/b/F1BsU7y0/project-management
+Task management table: https://trello.com/b/F1BsU7y0/project-management
 
 
 Tech stacks:
