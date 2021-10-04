@@ -2,11 +2,10 @@
 
 Participants:
 
-- Leader: [Update Later]
-- Member: [Nguyễn Đức Thông Thái - 19522188]
-- Member: [Nguyễn Hữu Quyến - update later]
-- Member: [Bùi Thị Thúy Ngọc - update later]
-- Member: [Nguyễn Thanh Trúc - update later]
+- Leader: [Nguyễn Đức Thông Thái - 19522188] 
+- Member: [Nguyễn Hữu Quyến - 19522113]
+- Member: [Bùi Thị Thúy Ngọc - 9521904
+- Member: [Nguyễn Thanh Trúc - 19522417]
 
 
 Task management table: https://trello.com/b/F1BsU7y0/project-management
