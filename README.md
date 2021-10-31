@@ -11,9 +11,7 @@ Participants:
 Task management table: https://trello.com/b/F1BsU7y0/project-management
 
 UX/UI prototype: https://www.figma.com/file/D1UeQdBLH6npNPJTJwMNm8/Hotel-Managing-Project---Prototype?node-id=0%3A1
-                 
                  https://www.figma.com/file/27QVZSMhwLtAXpmR4UPlm5/HOTEL-BOOKING?node-id=0%3A3
-
 
 Tech stacks:
 
