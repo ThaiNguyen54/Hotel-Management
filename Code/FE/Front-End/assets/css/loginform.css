@@ -1,0 +1,17 @@
+body {  
+  background-image: linear-gradient(#6A181E,#6A181D);
+  }
+   
+  #box {  
+  border: 1px solid rgb(200, 200, 200);   
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px; 
+  /* background: rgba(200, 200, 200, 0.1);    */
+  background-image: url(https://3.bp.blogspot.com/-6DgKmEjT3io/WVpJk3yR34I/AAAAAAAAoZ8/dMR258cSu4UcLjxKafS9wqGMMgz1ZiOfACLcBGAs/s1600/58e427bdc98b5.jpg);
+  background-size: cover;
+  border-radius: 4px; top:50px;
+  }
+   
+  h2 {    
+  text-align:center;  
+  color:#fff;
+  }
