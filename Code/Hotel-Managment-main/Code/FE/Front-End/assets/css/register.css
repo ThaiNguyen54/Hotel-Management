@@ -1,0 +1,148 @@
+/* athen modal */
+.auth-form {
+    width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+.auth-form__container {
+    padding: 0 32px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.auth-form__switch_btn {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* .auth-form__form {
+    
+} */
+
+.auth-form__input {
+    width: 100%;
+    height: 34px;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border:  1px solid var(--border-color);
+    outline: none;
+     
+}
+
+
+.auth-form__input:focus {
+    border-color: #8888;
+
+}
+
+.auth-form__aside {
+    margin-top: 18px;
+}
+
+.auth-form__policy-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__text-link {
+    color:  var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-from__controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+
+}
+
+a.auth-form__controls-back {
+     margin-right: 8px;
+
+}
+
+.auth-form__socials {
+    background-color: #F5F5F5;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+
+}
+/* button stype */
+
+.btn {
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+
+btn.btn--disable {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.auth-form__social-icon {
+    font-size:  1.8rem;
+
+}
+
+.auth-form
+.auth-form__socials--facebook.auth-form__social-icon {
+    color: var(--white-color);
+    background-color: #3a5a98;
+}
+
+.auth-form__socials-title {
+    margin:0 36px;
+}
+
+.auth-form__socials--google {
+    color: #666;
+    background-color: var(--white-color);
+}
