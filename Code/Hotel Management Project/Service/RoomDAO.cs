@@ -12,7 +12,24 @@ namespace Hotel_Management_Project.Service
         string ConnectionString = @"Data Source=THAI;Initial Catalog=Hotel_Managment;Integrated Security=True";
         public int DeleteRoom(RoomModel room)
         {
-            throw new NotImplementedException();
+            int newIDNumber = -1;
+            string sqlStatement = "DELETE FROM ROOM Where room_id = @ID";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                SqlCommand command = new SqlCommand(sqlStatement, connection);
+                
+                try
+                {
+                    command.Parameters.AddWithValue("@ID", room.RoomID);
+                    connection.Open();
+                    newIDNumber = Convert.ToInt32(command.ExecuteScalar());
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+            return newIDNumber;
         }
 
         public List<RoomModel> GetAllRoom()
@@ -114,17 +131,76 @@ namespace Hotel_Management_Project.Service
 
         public int InsertRoom(RoomModel room)
         {
-            throw new NotImplementedException();
+            int newIDNumber = -1;
+            string sqlStatement = "INSERT INTO ROOM (room_id, room_typeID, Name, Description, Price) VALUES (@ID, @typeID, @Name, @Description, @Price);";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                SqlCommand command = new SqlCommand(sqlStatement, connection);
+                command.Parameters.AddWithValue("@Name", room.RoomName);
+                command.Parameters.AddWithValue("@typeID", room.RoomTypeID);
+                command.Parameters.AddWithValue("@Description", room.RoomDescription);
+                command.Parameters.AddWithValue("@Price", room.RoomPrice);
+                command.Parameters.AddWithValue("@ID", room.RoomID);
+
+                try
+                {
+                    connection.Open();
+                    newIDNumber = Convert.ToInt32(command.ExecuteScalar());
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+            return newIDNumber;
         }
 
         public List<RoomModel> SearchRoom(string SearchTerms)
         {
-            throw new NotImplementedException();
+            List<RoomModel> foundRooms = new List<RoomModel>();
+            string sqlStatement = "SELECT * FROM ROOM WHERE Name LIKE @Name";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                SqlCommand command = new SqlCommand(sqlStatement, connection);
+                command.Parameters.AddWithValue("@Name", '%' + SearchTerms + '%');
+                try 
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        foundRooms.Add(new RoomModel { RoomID = (int)reader[0], RoomTypeID = (int)reader[1], RoomName = (string)reader[2], RoomDescription = (string)reader[3], RoomPrice = (int)reader[4] });
+                    }
+                }
+                catch { }
+            }
+            return foundRooms;
         }
 
         public int UpdateRoom(RoomModel room)
         {
-            throw new NotImplementedException();
+            int newIDNumber = -1;
+            string sqlStatement = "UPDATE ROOM SET room_typeID = @typeID, Name = @Name, Description = @Description, Price = @Price WHERE room_id = @ID";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                SqlCommand command = new SqlCommand(sqlStatement, connection);
+                command.Parameters.AddWithValue("@Name", room.RoomName);
+                command.Parameters.AddWithValue("@typeID", room.RoomTypeID);
+                command.Parameters.AddWithValue("@Description", room.RoomDescription);
+                command.Parameters.AddWithValue("@Price", room.RoomPrice);
+                command.Parameters.AddWithValue("@ID", room.RoomID);
+
+                try
+                {
+                    connection.Open();
+                    newIDNumber = Convert.ToInt32(command.ExecuteScalar());
+                }
+                catch (Exception ex)
+                {
+                    
+                }
+            }
+            return newIDNumber;
         }
     }
 }

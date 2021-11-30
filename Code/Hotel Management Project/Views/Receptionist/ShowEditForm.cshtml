@@ -1,0 +1,44 @@
+﻿@model Hotel_Management_Project.Models.ReceptionistModel
+
+<h4>ReceptionistModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProcessEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ReceptionistId" class="control-label"></label>
+                <input asp-for="ReceptionistId" class="form-control" />
+                <span asp-validation-for="ReceptionistId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReceptionistName" class="control-label"></label>
+                <input asp-for="ReceptionistName" class="form-control" />
+                <span asp-validation-for="ReceptionistName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReceptionistBirthDay" class="control-label"></label>
+                <input asp-for="ReceptionistBirthDay" class="form-control" />
+                <span asp-validation-for="ReceptionistBirthDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReceptionistPhone" class="control-label"></label>
+                <input asp-for="ReceptionistPhone" class="form-control" />
+                <span asp-validation-for="ReceptionistPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReceptionistAddress" class="control-label"></label>
+                <input asp-for="ReceptionistAddress" class="form-control" />
+                <span asp-validation-for="ReceptionistAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

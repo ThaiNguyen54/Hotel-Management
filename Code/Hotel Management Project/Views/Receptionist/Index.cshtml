@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Hotel_Management_Project.Models.ReceptionistModel>
+
+<p>
+    <a asp-action="InsertReceptionistForm">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ReceptionistId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReceptionistName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReceptionistBirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReceptionistPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReceptionistAddress)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceptionistId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceptionistName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceptionistBirthDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceptionistPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceptionistAddress)
+            </td>
+            <td>
+                <a href="/Receptionist/Edit/@item.ReceptionistId" class="btn primary">Edit</a>
+                <a href="/Receptionist/Delete/@item.ReceptionistId" class="btn primary">Delete</a>
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
