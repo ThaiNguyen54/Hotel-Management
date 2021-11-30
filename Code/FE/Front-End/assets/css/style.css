@@ -2450,7 +2450,7 @@ label {
       content: "";
       top: 0;
       bottom: 0;
-      background-image: url(../img/dining/dining-img.png);
+      background-image: url(../img/dining/hotel1.jpg);
       width: 50%;
       border-radius: 0 5px 0 0;
       background-size: cover;
@@ -2466,7 +2466,7 @@ label {
       content: "";
       top: 0;
       bottom: 0;
-      background-image: url(../img/dining/dining-img2.png);
+      background-image: url(../img/dining/hotel4.jpg);
       width: 50%;
       border-radius: 0 0 0 5px;
       background-repeat: no-repeat;
@@ -2474,7 +2474,58 @@ label {
       @media (max-width: 767px) {
         .dining-area .single-dining-area.right-img::before {
           display: none; } }
-
+  .dining-area .single-dining-area.left1-img {
+    position: relative; }
+    .dining-area .single-dining-area.left1-img::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      top: 0;
+      bottom: 0;
+      background-image: url(../img/dining/hotel3.jfif);
+      width: 50%;
+      border-radius: 0 5px 0 0;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      @media (max-width: 767px) {
+        .dining-area .single-dining-area.left1-img::before {
+          display: none; } }
+        /*  */
+  .dining-area .single-dining-area.right1-img {
+    position: relative; }
+    .dining-area .single-dining-area.right1-img::before {
+      position: absolute;
+      right: 50;
+      content: "";
+      top: 30;
+      bottom: 20;
+      background-image: url(../img/dining/hotel4.jpg);
+      width: 50%;
+      border-radius: 0 0 0 5px;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media (max-width: 767px) {
+        .dining-area .single-dining-area.right1-img::before {
+          display: none; } }        
+/*  */
+/* ..... */
+  .dining-area .single-dining-area.left3-img {
+    position: relative; }
+    .dining-area .single-dining-area.left3-img::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      top: 0;
+      bottom: 0;
+      background-image: url(../img/dining/hotel3.jfif);
+      width: 50%;
+      border-radius: 0 5px 0 0;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      @media (max-width: 767px) {
+        .dining-area .single-dining-area.left3-img::before {
+          display: none; } }
+/* .... */
 .dining-area .dining-caption {
   background: rgba(252, 252, 252, 0.95);
   padding: 92px 98px 98px 96px;
