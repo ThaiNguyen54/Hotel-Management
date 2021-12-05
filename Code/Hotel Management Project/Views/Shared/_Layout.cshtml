@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Hotel_Management_Project.Service
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
 <head>
     <meta charset="UTF-8">
@@ -76,9 +77,10 @@
                         </div>
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
-                            <div class="header-btn">
-                                <a href="loginform.html" class="btn btn1 d-none d-lg-block ">Login</a>
-                            </div>
+                                <partial name="_LoginInfo"/>
+                            @*<div class="header-btn">
+                                <a href="Login" class="btn btn1 d-none d-lg-block ">Login</a>
+                            </div>*@
                         </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">

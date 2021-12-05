@@ -1,11 +1,16 @@
 ﻿@model Hotel_Management_Project.Models.AccountModel
 
-<h4>Log in</h4>
+<h4>Sign up</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="ProcessLogin">
+        <form asp-action="RegisterProcess">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="UserName" class="control-label"></label>
                 <input asp-for="UserName" class="form-control" />
@@ -13,11 +18,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="PassWord" class="control-label"></label>
-                <input asp-for="PassWord" class="form-control" type="password"/>
+                <input asp-for="PassWord" class="form-control" />
                 <span asp-validation-for="PassWord" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Log in" class="btn btn-primary" />
+                <input type="submit" value="Sign up" class="btn btn-primary" />
             </div>
         </form>
     </div>

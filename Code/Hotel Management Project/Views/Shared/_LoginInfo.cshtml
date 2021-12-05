@@ -1,0 +1,14 @@
+﻿
+
+@if (Hotel_Management_Project.Service.SecurityService.Valid == true) 
+{
+       <div class="header-btn dropdown">
+            <a asp-action="Logout" asp-controller="Logout"class="btn btn1 d-none d-lg-block ">Log out</a>                         
+       </div>         }
+else
+{
+    <div class="nav-item">
+       <a href="Login" class="btn btn1 d-none d-lg-block ">Login</a>          
+       <a href="Account/RegisterForm" class="btn btn1 d-none d-lg-block ">Register</a>   
+    </div>
+}
