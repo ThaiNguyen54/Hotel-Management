@@ -20,6 +20,7 @@ namespace Hotel_Management_Project.Controllers
             return View();
         }
 
+      
         public IActionResult ProcessInsert(CustomerModel customer)
         {
             CustomerDAO customers = new CustomerDAO();

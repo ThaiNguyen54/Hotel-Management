@@ -11,8 +11,8 @@ public class Reservation
     public string Room { get; set; }
     public int NumberOfPeople { get; set; }
 
-    public string checkinDateTime => checkinDateTime.ToString("MM/dd/yyyy");
-    public string checkoutDateTime => checkoutDateTime.ToString("MM/dd/yyyy");
+    public string toCheckinDateTime => checkinDateTime.ToString("MM/dd/yyyy");
+  
 
 
 }
