@@ -28,5 +28,11 @@ namespace Hotel_Management_Project.Controllers
             }
             
         }
+        public IActionResult RegisterProcess(AccountModel account)
+        {
+            AccountDAO accountDAO = new AccountDAO();
+            accountDAO.InsertAccount(account);
+            return View();
+        }
     }
 }

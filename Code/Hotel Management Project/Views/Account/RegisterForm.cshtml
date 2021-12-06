@@ -1,6 +1,6 @@
 ﻿@model Hotel_Management_Project.Models.AccountModel
 
-<h4>Sign up</h4>
+@*<h4>Sign up</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -26,7 +26,151 @@
             </div>
         </form>
     </div>
-</div>
+</div>*@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Penhouse Hotel Manager</title>
+    <meta name="description" content="width=device-width, initial-scale=1">   
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_penhouse1.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="assets/css/gijgo.css"> 
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css"> 
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"> 
+    <link rel="stylesheet" href="assets/css/themify-icons.css"> 
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css"> 
+    <link rel="stylesheet" href="assets/css/search.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="stylesheet" href="assets/css/loginform.css">
+    <!-- link auther form -->
+    <link rel="stylesheet" href="assets/css/loginform.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+    <body>
+        <div class="row justify-content-center">
+            <div class="room-btn pt-70"></div>
+        </div>
+        <div class="font-back-tittle mb-45">
+            <div class="archivment-front">
+                <h3>Penhouse Hotel</h3>
+            </div>
+            <h3 class="archivment-back">Penhouse Hotel</h3>
+        </div>
+        <!--     auther form start   -->
+        <div class="row">
+            <div class="col-md-6 mx-auto p-0">
+                <form asp-action="RegisterProcess">
+                    <div class="card">
+                    <div class="login-box">
+                        <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                            <div class="login-space">
+                                <div class="sign-up-form">
+                                    <div class="group">
+                                        <label asp-for="Id" class="control-label"></label>
+                                        <input asp-for="Id" class="form-control" />
+                                        <span asp-validation-for="Id" class="text-danger"></span>
+                                    </div>
+                                    <div class="group"> 
+                                        <label asp-for="UserName" class="control-label">Username</label> 
+                                        <input asp-for="UserName" type="text" class="form-control" placeholder="Create your Username"> 
+                                        <span asp-validation-for="UserName" class="text-danger"></span>
+                                    </div>
+                                    <div class="group"> 
+                                        <label asp-for="PassWord" class="control-label">Password</label> 
+                                        <input asp-for="PassWord" type="password" class="form-control" data-type="password" placeholder="Create your password"> 
+                                         <span asp-validation-for="PassWord" class="text-danger"></span>
+                                    </div>     
+                                    <div class="group">  <input type="submit" class="button"  value="Sign Up">  </div>
+                                    <div class="hr"></div>
+                                    <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+                
+            </div>
+        </div>
+
+        <!--     auther form end     -->
+
+        <!-- JS here -->
+        
+            <!-- All JS Custom Plugins Link Here here -->
+            <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+            
+            <!-- Jquery, Popper, Bootstrap -->
+            <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+            <script src="./assets/js/popper.min.js"></script>
+            <script src="./assets/js/bootstrap.min.js"></script>
+            <!-- Jquery Mobile Menu -->
+            <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+            <!-- Jquery Slick , Owl-Carousel Plugins -->
+            <script src="./assets/js/owl.carousel.min.js"></script>
+            <script src="./assets/js/slick.min.js"></script>
+            <!-- Date Picker -->
+            <script src="./assets/js/gijgo.min.js"></script>
+            <!-- One Page, Animated-HeadLin -->
+            <script src="./assets/js/wow.min.js"></script>
+            <script src="./assets/js/animated.headline.js"></script>
+            <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+            <!-- Scrollup, nice-select, sticky -->
+            <script src="./assets/js/jquery.scrollUp.min.js"></script>
+            <script src="./assets/js/jquery.nice-select.min.js"></script>
+            <script src="./assets/js/jquery.sticky.js"></script>
+            
+            <!-- contact js -->
+            <script src="./assets/js/contact.js"></script>
+            <script src="./assets/js/jquery.form.js"></script>
+            <script src="./assets/js/jquery.validate.min.js"></script>
+            <script src="./assets/js/mail-script.js"></script>
+            <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+            
+            <!-- Jquery Plugins, main Jquery -->	
+            <script src="./assets/js/plugins.js"></script>
+            <script src="./assets/js/main.js"></script>
+
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
+            <!-- auther form js start -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!-- auther form js end -->
+        
+    </body>
+</html>
 
 
 
